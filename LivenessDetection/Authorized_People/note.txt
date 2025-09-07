@@ -1,0 +1,1 @@
+Saves the pictures of authorized people in this folder. 
