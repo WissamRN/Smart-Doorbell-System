@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Senior_project</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="spinner">
+        <item>Visitor</item>
+        <item>Granted</item>
+        <item>Denied</item>
+    </string-array>
+</resources>

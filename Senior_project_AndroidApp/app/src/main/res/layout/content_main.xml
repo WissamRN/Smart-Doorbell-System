@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A0618"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/Image"
+        android:layout_width="215dp"
+        android:layout_height="142dp"
+        android:layout_marginBottom="88dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnRecent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141"
+        app:srcCompat="@mipmap/home"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRecent"
+        android:layout_width="321dp"
+        android:layout_height="60dp"
+        android:text="Recent Visits                           >"
+        android:textColor="#CCC6C6"
+        android:textSize="15sp"
+        app:backgroundTint="#534E4E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="321dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Open Door                               >"
+        android:textColor="#CCC6C6"
+        android:textSize="15sp"
+        app:backgroundTint="#534E4E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="237dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="monospace"
+        android:text="Secure Home"
+        android:textAllCaps="false"
+        android:textColor="#CCC6C6"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="321dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:text="CALL FOR EMERGENCY"
+        android:textAlignment="center"
+        android:textColor="#CCC6C6"
+        android:textSize="15sp"
+        app:backgroundTint="#534E4E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpen"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
